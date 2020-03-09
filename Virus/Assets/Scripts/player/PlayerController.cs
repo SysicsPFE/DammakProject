@@ -63,36 +63,10 @@ public class PlayerController : MonoBehaviour
 
     private void MoveIn8Directions(Vector2 movementInput)
     {
-        Vector3 YjoystickAxis = MoveForwardAndBackward(movementInput.y);
-        Vector3 XjoystickAxis = MoveRightAndLeft(movementInput.x);
-        _playerController.Move(YjoystickAxis + XjoystickAxis);
-    }
-
-    private Vector3 MoveForwardAndBackward(float WSaxis)
-    {
-        _playerAnimator.SetFloat("yAxis",WSaxis);
-        Vector3 normalizedPlayerAndCameraDistance = (transform.position - _playerCamera.position).normalized;
-        Vector3 playerSpeedForwardAndBackward =
-            new Vector3(playerSpeed * WSaxis * normalizedPlayerAndCameraDistance.x, 0,
-                playerSpeed * WSaxis * normalizedPlayerAndCameraDistance.z);
-        return playerSpeedForwardAndBackward;
-    }
-
-    private Vector3 MoveRightAndLeft(float ADaxis)
-    {
-        _playerAnimator.SetFloat("xAxis",ADaxis);
-        /*Vector3 normalizedPlayerCameraDistance = (transform.position - _playerCamera.position).normalized;
-        normalizedPlayerCameraDistance.x = Mathf.Abs(normalizedPlayerCameraDistance.x);
-        normalizedPlayerCameraDistance.z = Mathf.Abs(normalizedPlayerCameraDistance.z);
-        Vector3 newPosition = transform.position - normalizedPlayerCameraDistance;
-        Vector3 playerSpeedRightAndLeft = new Vector3(playerSpeed * ADaxis * newPosition.x, 0,
-            playerSpeed * ADaxis * newPosition.z);
-        return playerSpeedRightAndLeft;*/
-        Vector3 normalizedPlayerAndCameraDistance = (transform.position - _playerCamera.position).normalized;
-        Vector3 playerSpeedForwardAndBackward =
-            new Vector3(playerSpeed * ADaxis * normalizedPlayerAndCameraDistance.z, 0,
-                playerSpeed * ADaxis * normalizedPlayerAndCameraDistance.x);
-        return playerSpeedForwardAndBackward;
+        _playerAnimator.SetFloat("xAxis",movementInput.x);
+        _playerAnimator.SetFloat("yAxis",movementInput.y);
+        Vector3 move = transform.right * movementInput.x + transform.forward * movementInput.y;
+        _playerController.Move(move*playerSpeed);
     }
 
     #endregion
