@@ -2,12 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df0d6912-99fc-4929-a0d6-87ddd4038c34" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Virus/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Virus/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Virus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Virus/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/3D models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/3D models/m14Cartoonish.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/3D models/m14Cartoonish.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/3D models/player.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/3D models/player.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/player@Rifle Idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/player@Rifle Idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run backward left.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run backward left.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run backward right.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run backward right.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run backward.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run backward.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run forward left.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run forward left.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run forward right.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run forward right.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run forward.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run forward.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run left.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run left.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run right.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Animations/Player/run right.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/metal1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/metal1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/metal2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/metal2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/metal3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/metal3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/tape green.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/tape green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/tape white.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/tape white.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/wood1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Materials/cartoony m14/wood1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player/PlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player/PlayerController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,21 +60,83 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            <state relative-caret-position="208">
+              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
               <folding>
-                <marker date="1583791145249" expanded="true" signature="60:766" ph="{...}" />
-                <marker date="1583791145249" expanded="false" signature="67:211" ph="variables" />
-                <marker date="1583791145249" expanded="false" signature="94:191" ph="public static variables" />
-                <marker date="1583791145249" expanded="false" signature="217:515" ph="buildin methods" />
-                <marker date="1583791145249" expanded="false" signature="258:442" ph="{...}" />
-                <marker date="1583791145249" expanded="true" signature="294:386" ph="{...}" />
-                <marker date="1583791145249" expanded="false" signature="461:499" ph="{...}" />
-                <marker date="1583791145249" expanded="false" signature="525:764" ph="custom methods" />
-                <marker date="1583791145249" expanded="false" signature="597:744" ph="{...}" />
-                <marker date="1583791145249" expanded="true" signature="625:738" ph="{...}" />
+                <marker date="1585548581158" expanded="true" signature="151:4104" ph="{...}" />
+                <marker date="1585548581158" expanded="true" signature="163:764" ph="variables" />
+                <marker date="1585548581158" expanded="false" signature="189:573" ph="private variables" />
+                <marker date="1585548581158" expanded="true" signature="583:748" ph="constent variables" />
+                <marker date="1585548581158" expanded="false" signature="774:2190" ph="buildin methods" />
+                <marker date="1585548581158" expanded="false" signature="815:1157" ph="{...}" />
+                <marker date="1585548581158" expanded="false" signature="1176:2174" ph="{...}" />
+                <marker date="1585548581158" expanded="true" signature="1873:2003" ph="{...}" />
+                <marker date="1585548581158" expanded="true" signature="2016:2158" ph="{...}" />
+                <marker date="1585548581158" expanded="true" signature="2196:4097" ph="custom methods" />
+                <marker date="1585548581158" expanded="false" signature="2250:2546" ph="{...}" />
+                <marker date="1585548581158" expanded="false" signature="2605:2884" ph="{...}" />
+                <marker date="1585548581158" expanded="false" signature="2965:3288" ph="{...}" />
+                <marker date="1585548581158" expanded="true" signature="2993:3127" ph="{...}" />
+                <marker date="1585548581158" expanded="true" signature="3140:3282" ph="{...}" />
+                <marker date="1585548581158" expanded="false" signature="3373:3638" ph="{...}" />
+                <marker date="1585548581158" expanded="true" signature="3675:4081" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraSettings.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+              <folding>
+                <marker date="1585311383686" expanded="true" signature="6:37" ph="..." />
+                <marker date="1585311383686" expanded="true" signature="82:1626" ph="{...}" />
+                <marker date="1585311383686" expanded="false" signature="89:305" ph="variables" />
+                <marker date="1585311383686" expanded="false" signature="116:289" ph="private variables" />
+                <marker date="1585311383686" expanded="false" signature="311:746" ph="buildin methods" />
+                <marker date="1585311383686" expanded="false" signature="352:598" ph="{...}" />
+                <marker date="1585311383686" expanded="false" signature="617:730" ph="{...}" />
+                <marker date="1585311383686" expanded="false" signature="752:1619" ph="custom methods" />
+                <marker date="1585311383686" expanded="false" signature="821:1603" ph="{...}" />
+                <marker date="1585311383686" expanded="true" signature="908:1246" ph="{...}" />
+                <marker date="1585311383686" expanded="true" signature="1259:1597" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding>
+                <marker date="1585547002004" expanded="true" signature="61:464" ph="{...}" />
+                <marker date="1585547002004" expanded="false" signature="73:106" ph="variables" />
+                <marker date="1585547002004" expanded="false" signature="112:208" ph="buildin methods" />
+                <marker date="1585547002004" expanded="false" signature="154:192" ph="{...}" />
+                <marker date="1585547002004" expanded="false" signature="218:457" ph="custom methods" />
+                <marker date="1585547002004" expanded="true" signature="290:437" ph="{...}" />
+                <marker date="1585547002004" expanded="true" signature="318:431" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1585309997060" expanded="true" signature="61:807" ph="{...}" />
+                <marker date="1585309997060" expanded="false" signature="68:447" ph="variables" />
+                <marker date="1585309997060" expanded="false" signature="95:427" ph="public static variables" />
+                <marker date="1585309997060" expanded="false" signature="453:805" ph="buildin methods" />
+                <marker date="1585309997060" expanded="false" signature="495:789" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -40,17 +144,47 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_playerCinemachineAimCamera</find>
+      <find>_playerCinemachineCamera</find>
+      <find>m_LookAt</find>
+      <find>LookAt</find>
+      <find>mouse y</find>
+      <find>value</find>
+      <find>input</find>
+      <find>inputAxis</find>
+      <find>the value of the</find>
+      <find>m_YAxis</find>
+      <find>Validate</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/AllManagers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.5.0/Runtime/Behaviours/CinemachineFreeLook.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/77/50eed0fa/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.5.0/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/allManagers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/AllManagers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/UiManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -66,11 +200,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -108,11 +242,20 @@
       <workItem from="1583478130715" duration="2008000" />
       <workItem from="1583742533288" duration="5093000" />
       <workItem from="1583788856037" duration="1766000" />
+      <workItem from="1584569122591" duration="993000" />
+      <workItem from="1584814691442" duration="2447000" />
+      <workItem from="1584871141946" duration="11382000" />
+      <workItem from="1584898505251" duration="9066000" />
+      <workItem from="1585066030096" duration="7381000" />
+      <workItem from="1585116678655" duration="10830000" />
+      <workItem from="1585305564278" duration="8490000" />
+      <workItem from="1585500917611" duration="595000" />
+      <workItem from="1585546437818" duration="2306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8867000" />
+    <option name="totallyTimeSpent" value="62357000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -167,28 +310,135 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/player/PlayerController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/player/PlayerController.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/CinemachineExamples/Scenes/OverTheShoulderAim/ActivateOnKeypress.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/AllManagers.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="80">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <marker date="1585118491954" expanded="true" signature="60:310" ph="{...}" />
+            <marker date="1585118491954" expanded="true" signature="124:308" ph="{...}" />
+            <marker date="1585118491954" expanded="true" signature="160:252" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.5.0/Runtime/Behaviours/CinemachineFreeLook.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state relative-caret-position="1062">
+          <caret line="143" column="28" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="28" />
           <folding>
-            <marker date="1583791145249" expanded="true" signature="60:766" ph="{...}" />
-            <marker date="1583791145249" expanded="false" signature="67:211" ph="variables" />
-            <marker date="1583791145249" expanded="false" signature="94:191" ph="public static variables" />
-            <marker date="1583791145249" expanded="false" signature="217:515" ph="buildin methods" />
-            <marker date="1583791145249" expanded="false" signature="258:442" ph="{...}" />
-            <marker date="1583791145249" expanded="true" signature="294:386" ph="{...}" />
-            <marker date="1583791145249" expanded="false" signature="461:499" ph="{...}" />
-            <marker date="1583791145249" expanded="false" signature="525:764" ph="custom methods" />
-            <marker date="1583791145249" expanded="false" signature="597:744" ph="{...}" />
-            <marker date="1583791145249" expanded="true" signature="625:738" ph="{...}" />
+            <element signature="e#0#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.5.0/Runtime/Behaviours/CinemachineBrain.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2016">
+          <caret line="357" column="41" lean-forward="true" selection-start-line="357" selection-start-column="41" selection-end-line="357" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/77/50eed0fa/Vector3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="470" column="103" selection-start-line="470" selection-start-column="103" selection-end-line="470" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/UiManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <marker date="1585546941356" expanded="true" signature="58:490" ph="{...}" />
+            <marker date="1585546941356" expanded="false" signature="65:213" ph="variables" />
+            <marker date="1585546941356" expanded="false" signature="92:192" ph="private static variables" />
+            <marker date="1585546941356" expanded="false" signature="219:339" ph="buildin methods" />
+            <marker date="1585546941356" expanded="true" signature="260:323" ph="{...}" />
+            <marker date="1585546941356" expanded="false" signature="345:488" ph="custom methods" />
+            <marker date="1585546941356" expanded="true" signature="421:472" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1585309997060" expanded="true" signature="61:807" ph="{...}" />
+            <marker date="1585309997060" expanded="false" signature="68:447" ph="variables" />
+            <marker date="1585309997060" expanded="false" signature="95:427" ph="public static variables" />
+            <marker date="1585309997060" expanded="false" signature="453:805" ph="buildin methods" />
+            <marker date="1585309997060" expanded="false" signature="495:789" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <marker date="1585547002004" expanded="true" signature="61:464" ph="{...}" />
+            <marker date="1585547002004" expanded="false" signature="73:106" ph="variables" />
+            <marker date="1585547002004" expanded="false" signature="112:208" ph="buildin methods" />
+            <marker date="1585547002004" expanded="false" signature="154:192" ph="{...}" />
+            <marker date="1585547002004" expanded="false" signature="218:457" ph="custom methods" />
+            <marker date="1585547002004" expanded="true" signature="290:437" ph="{...}" />
+            <marker date="1585547002004" expanded="true" signature="318:431" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraSettings.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <marker date="1585311383686" expanded="true" signature="6:37" ph="..." />
+            <marker date="1585311383686" expanded="true" signature="82:1626" ph="{...}" />
+            <marker date="1585311383686" expanded="false" signature="89:305" ph="variables" />
+            <marker date="1585311383686" expanded="false" signature="116:289" ph="private variables" />
+            <marker date="1585311383686" expanded="false" signature="311:746" ph="buildin methods" />
+            <marker date="1585311383686" expanded="false" signature="352:598" ph="{...}" />
+            <marker date="1585311383686" expanded="false" signature="617:730" ph="{...}" />
+            <marker date="1585311383686" expanded="false" signature="752:1619" ph="custom methods" />
+            <marker date="1585311383686" expanded="false" signature="821:1603" ph="{...}" />
+            <marker date="1585311383686" expanded="true" signature="908:1246" ph="{...}" />
+            <marker date="1585311383686" expanded="true" signature="1259:1597" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding>
+            <marker date="1585548581158" expanded="true" signature="151:4104" ph="{...}" />
+            <marker date="1585548581158" expanded="true" signature="163:764" ph="variables" />
+            <marker date="1585548581158" expanded="false" signature="189:573" ph="private variables" />
+            <marker date="1585548581158" expanded="true" signature="583:748" ph="constent variables" />
+            <marker date="1585548581158" expanded="false" signature="774:2190" ph="buildin methods" />
+            <marker date="1585548581158" expanded="false" signature="815:1157" ph="{...}" />
+            <marker date="1585548581158" expanded="false" signature="1176:2174" ph="{...}" />
+            <marker date="1585548581158" expanded="true" signature="1873:2003" ph="{...}" />
+            <marker date="1585548581158" expanded="true" signature="2016:2158" ph="{...}" />
+            <marker date="1585548581158" expanded="true" signature="2196:4097" ph="custom methods" />
+            <marker date="1585548581158" expanded="false" signature="2250:2546" ph="{...}" />
+            <marker date="1585548581158" expanded="false" signature="2605:2884" ph="{...}" />
+            <marker date="1585548581158" expanded="false" signature="2965:3288" ph="{...}" />
+            <marker date="1585548581158" expanded="true" signature="2993:3127" ph="{...}" />
+            <marker date="1585548581158" expanded="true" signature="3140:3282" ph="{...}" />
+            <marker date="1585548581158" expanded="false" signature="3373:3638" ph="{...}" />
+            <marker date="1585548581158" expanded="true" signature="3675:4081" ph="{...}" />
           </folding>
         </state>
       </provider>
