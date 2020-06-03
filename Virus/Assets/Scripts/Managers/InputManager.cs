@@ -21,8 +21,8 @@ public class InputManager : MonoBehaviour
 
     void Update()
     {
-        leftMouseButton = KeyCode.Mouse1;
-        rightMouseButton = KeyCode.Mouse0;
+        leftMouseButton = KeyCode.Mouse0;
+        rightMouseButton = KeyCode.Mouse1;
         mouseY = Input.GetAxis("Mouse Y");
         mouseX = Input.GetAxis("Mouse X");
         upDownArrowKeys = Input.GetAxis("Vertical");

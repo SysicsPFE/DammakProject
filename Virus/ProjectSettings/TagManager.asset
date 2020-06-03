@@ -8,6 +8,8 @@ TagManager:
   - VirtualMainCamera
   - GameManager
   - VirtualAimCamera
+  - MainCam
+  - M4A1
   layers:
   - Default
   - TransparentFX

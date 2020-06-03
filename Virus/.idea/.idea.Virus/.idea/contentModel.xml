@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\win10\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\win10\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Virus.679727220.00" t="ExcludeRecursive" />
+    <e p="C:\Users\workSpace\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\workSpace\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Virus.679727220.00" t="ExcludeRecursive" />
     <e p="D:\unity\PFE\DammakProject\Virus" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -15,6 +15,72 @@
               <e p="Scripts" t="Include">
                 <e p="CodeStage.Package2Folder.asmdef" t="Include" />
                 <e p="Package2Folder.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Package Manager" t="Include">
+            <e p="Cinemachine" t="Include">
+              <e p="2.5.0" t="Include">
+                <e p="Cinemachine Example Scenes" t="Include">
+                  <e p="Scenes" t="Include">
+                    <e p="OverTheShoulderAim" t="Include">
+                      <e p="ActivateOnKeypress.cs" t="Include" />
+                    </e>
+                    <e p="Scripting" t="Include">
+                      <e p="ScriptingExample.cs" t="Include" />
+                    </e>
+                    <e p="Trigger volumes" t="Include">
+                      <e p="GenericTrigger.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Shared" t="Include">
+                    <e p="Models" t="Include">
+                      <e p="UnityCharacter" t="Include">
+                        <e p="Scripts" t="Include">
+                          <e p="CharacterMovement.cs" t="Include" />
+                          <e p="CharacterMovement2D.cs" t="Include" />
+                        </e>
+                      </e>
+                    </e>
+                    <e p="Scripts" t="Include">
+                      <e p="ActivateCameraWithDistance.cs" t="Include" />
+                      <e p="ActivateCamOnPlay.cs" t="Include" />
+                      <e p="ExampleHelpWindow.cs" t="Include" />
+                      <e p="MixingCameraBlend.cs" t="Include" />
+                      <e p="PlayerMove.cs" t="Include" />
+                      <e p="PlayerMoveOnSphere.cs" t="Include" />
+                      <e p="PlayerMovePhysics.cs" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="TextMesh Pro" t="Include">
+              <e p="Fonts" t="Include">
+                <e p="LiberationSans - OFL.txt" t="Include" />
+              </e>
+              <e p="Resources" t="Include">
+                <e p="LineBreaking Following Characters.txt" t="Include" />
+                <e p="LineBreaking Leading Characters.txt" t="Include" />
+                <e p="Shaders" t="Include">
+                  <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+                  <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+                  <e p="TMP_Bitmap.shader" t="Include" />
+                  <e p="TMP_SDF Overlay.shader" t="Include" />
+                  <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+                  <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+                  <e p="TMP_SDF-Mobile.shader" t="Include" />
+                  <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+                  <e p="TMP_SDF-Surface.shader" t="Include" />
+                  <e p="TMP_SDF.shader" t="Include" />
+                  <e p="TMP_Sprite.shader" t="Include" />
+                  <e p="TMPro.cginc" t="Include" />
+                  <e p="TMPro_Properties.cginc" t="Include" />
+                  <e p="TMPro_Surface.cginc" t="Include" />
+                </e>
+              </e>
+              <e p="Sprites" t="Include">
+                <e p="EmojiOne Attribution.txt" t="Include" />
               </e>
             </e>
           </e>
@@ -39,8 +105,13 @@
             <e p="GameManager.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
             <e p="UiManager.cs" t="Include" />
+            <e p="WeaponsManager.cs" t="Include" />
           </e>
           <e p="PlayerController.cs" t="Include" />
+          <e p="Weapons" t="Include">
+            <e p="M4A1.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="CodeStage.Package2Folder.csproj" t="IncludeRecursive" />

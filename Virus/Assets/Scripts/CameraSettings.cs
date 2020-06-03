@@ -24,18 +24,18 @@ public class CameraSettings : MonoBehaviour
 
     void Update()
     {
-        bool isAiming = Input.GetKey(InputManager.leftMouseButton);
-        SetAimAngleTo(isAiming);
+        SetActiveCamera();
     }
 
     #endregion
 
     #region custom methods
 
-    private void SetAimAngleTo(bool isAiming)
+    private void SetActiveCamera()
     {
-        int highPriority = 1;
-        int lowPriority = 0;
+        const int highPriority = 1;
+        const int lowPriority = 0;
+        bool isAiming = Input.GetKey(InputManager.rightMouseButton);
         if (isAiming)
         {
             _playerCinemachineCamera.Priority = lowPriority;
