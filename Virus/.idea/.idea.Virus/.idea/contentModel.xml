@@ -7,8 +7,84 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="FireExplosionVFX" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="FxSplash.cs" t="Include" />
+            <e p="LaunchEffect.cs" t="Include" />
+          </e>
+        </e>
+        <e p="JMO Assets" t="Include">
+          <e p="Cartoon FX Easy Editor" t="Include">
+            <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="CFXEasyEditor.cs" t="Include" />
+            </e>
+          </e>
+          <e p="WarFX" t="Include">
+            <e p="!WarFX Readme.txt" t="Include" />
+            <e p="_Effects" t="Include">
+              <e p="MuzzleFlashes" t="Include">
+                <e p="!MuzzleFlash Differences.txt" t="Include" />
+              </e>
+            </e>
+            <e p="_Effects (Mobile)" t="Include">
+              <e p="MuzzleFlashes" t="Include">
+                <e p="!MuzzleFlash Differences.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Demo" t="Include">
+              <e p="Assets" t="Include">
+                <e p="CFX_AutoStopLoopedEffect.cs" t="Include" />
+                <e p="CFX_Demo_RandomDir.cs" t="Include" />
+                <e p="CFX_Demo_RotateCamera.cs" t="Include" />
+                <e p="CFX_Demo_Translate.cs" t="Include" />
+                <e p="WFX_Demo.cs" t="Include" />
+                <e p="WFX_Demo_DeleteAfterDelay.cs" t="Include" />
+                <e p="WFX_Demo_New.cs" t="Include" />
+                <e p="WFX_Demo_RandomDir.cs" t="Include" />
+                <e p="WFX_Demo_Wall.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Editor" t="Include">
+              <e p="CFX_SpawnSystemEditor.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="CFX_AutoDestructShuriken.cs" t="Include" />
+              <e p="CFX_LightIntensityFade.cs" t="Include" />
+              <e p="WFX_BulletHoleDecal.cs" t="Include" />
+              <e p="WFX_LightFlicker.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="WFX_S Add Scroll.shader" t="Include" />
+              <e p="WFX_S Alpha-Diffuse TintColor.shader" t="Include" />
+              <e p="WFX_S Alpha-Specular TintColor.shader" t="Include" />
+              <e p="WFX_S AlphaBlend NoSoftParticles.shader" t="Include" />
+              <e p="WFX_S AlphaBlend Scroll.shader" t="Include" />
+              <e p="WFX_S Multiply Soft Scroll.shader" t="Include" />
+              <e p="WFX_S Multiply Soft.shader" t="Include" />
+              <e p="WFX_S Particle Add A8.shader" t="Include" />
+              <e p="WFX_S Particle AddSoft A8.shader" t="Include" />
+              <e p="WFX_S Particle Multiply A8.shader" t="Include" />
+              <e p="WFX_S Smoke Scroll.shader" t="Include" />
+            </e>
+            <e p="Spawn System" t="Include">
+              <e p="CFX_SpawnSystem.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Resources" t="Include">
           <e p="Asset Store" t="Include">
+            <e p="Movinarc" t="Include">
+              <e p="PackageUninstaller" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="PUManager.cs" t="Include" />
+                  <e p="PUSelection.cs" t="Include" />
+                  <e p="TreeNode.cs" t="Include" />
+                  <e p="TreeView.cs" t="Include" />
+                </e>
+                <e p="readme.txt" t="Include" />
+              </e>
+            </e>
             <e p="Package2Folder" t="Include">
               <e p="changelog.txt" t="Include" />
               <e p="readme.txt" t="Include" />
@@ -99,7 +175,29 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AI" t="Include">
+            <e p="drones" t="Include">
+              <e p="Drone.cs" t="Include" />
+              <e p="OrangeDrone.cs" t="Include" />
+              <e p="SpaceDroid.cs" t="Include" />
+            </e>
+            <e p="machine gun" t="Include">
+              <e p="MachineGun.cs" t="Include" />
+              <e p="TargetIsPlayer.cs" t="Include" />
+            </e>
+            <e p="robot 2.0" t="Include">
+              <e p="SafeProgram.cs" t="Include" />
+            </e>
+            <e p="RobotFighter.cs" t="Include" />
+            <e p="tank" t="Include">
+              <e p="Tank.cs" t="Include" />
+              <e p="TankCannon.cs" t="Include" />
+            </e>
+          </e>
           <e p="CameraSettings.cs" t="Include" />
+          <e p="DrawLine.cs" t="Include" />
+          <e p="HealthBar.cs" t="Include" />
+          <e p="HealthBarLookAtPlayer.cs" t="Include" />
           <e p="Managers" t="Include">
             <e p="allManagers.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
@@ -107,7 +205,12 @@
             <e p="UiManager.cs" t="Include" />
             <e p="WeaponsManager.cs" t="Include" />
           </e>
-          <e p="PlayerController.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="sc-fi door" t="Include">
+            <e p="Door.cs" t="Include" />
+            <e p="GiveSound.cs" t="Include" />
+            <e p="LockDoor.cs" t="Include" />
+          </e>
           <e p="Weapons" t="Include">
             <e p="M4A1.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />

@@ -12,64 +12,64 @@ public class CharacterMovement : MonoBehaviour
     public KeyCode sprintJoystick = KeyCode.JoystickButton2;
     public KeyCode sprintKeyboard = KeyCode.Space;
 
-    private float turnSpeedMultiplier;
-    private float speed = 0f;
-    private float direction = 0f;
-    private bool isSprinting = false;
-    private Animator anim;
-    private Vector3 targetDirection;
-    private Vector2 input;
-    private Quaternion freeRotation;
-    private Camera mainCamera;
-    private float velocity;
+    private float _turnSpeedMultiplier;
+    private float _speed = 0f;
+    private float _direction = 0f;
+    private bool _isSprinting = false;
+    private Animator _anim;
+    private Vector3 _targetDirection;
+    private Vector2 _input;
+    private Quaternion _freeRotation;
+    private Camera _mainCamera;
+    private float _velocity;
 
 	// Use this for initialization
 	void Start ()
 	{
-	    anim = GetComponent<Animator>();
-	    mainCamera = Camera.main;
+	    _anim = GetComponent<Animator>();
+	    _mainCamera = Camera.main;
 	}
 
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-	    input.x = Input.GetAxis("Horizontal");
-	    input.y = Input.GetAxis("Vertical");
+	    _input.x = Input.GetAxis("Horizontal");
+	    _input.y = Input.GetAxis("Vertical");
 
 		// set speed to both vertical and horizontal inputs
         if (useCharacterForward)
-            speed = Mathf.Abs(input.x) + input.y;
+            _speed = Mathf.Abs(_input.x) + _input.y;
         else
-            speed = Mathf.Abs(input.x) + Mathf.Abs(input.y);
+            _speed = Mathf.Abs(_input.x) + Mathf.Abs(_input.y);
 
-        speed = Mathf.Clamp(speed, 0f, 1f);
-        speed = Mathf.SmoothDamp(anim.GetFloat("Speed"), speed, ref velocity, 0.1f);
-        anim.SetFloat("Speed", speed);
+        _speed = Mathf.Clamp(_speed, 0f, 1f);
+        _speed = Mathf.SmoothDamp(_anim.GetFloat("Speed"), _speed, ref _velocity, 0.1f);
+        _anim.SetFloat("Speed", _speed);
 
-	    if (input.y < 0f && useCharacterForward)
-            direction = input.y;
+	    if (_input.y < 0f && useCharacterForward)
+            _direction = _input.y;
 	    else
-            direction = 0f;
+            _direction = 0f;
 
-        anim.SetFloat("Direction", direction);
+        _anim.SetFloat("Direction", _direction);
 
         // set sprinting
-	    isSprinting = ((Input.GetKey(sprintJoystick) || Input.GetKey(sprintKeyboard)) && input != Vector2.zero && direction >= 0f);
-        anim.SetBool("isSprinting", isSprinting);
+	    _isSprinting = ((Input.GetKey(sprintJoystick) || Input.GetKey(sprintKeyboard)) && _input != Vector2.zero && _direction >= 0f);
+        _anim.SetBool("isSprinting", _isSprinting);
 
         // Update target direction relative to the camera view (or not if the Keep Direction option is checked)
         UpdateTargetDirection();
-        if (input != Vector2.zero && targetDirection.magnitude > 0.1f)
+        if (_input != Vector2.zero && _targetDirection.magnitude > 0.1f)
         {
-            Vector3 lookDirection = targetDirection.normalized;
-            freeRotation = Quaternion.LookRotation(lookDirection, transform.up);
-            var diferenceRotation = freeRotation.eulerAngles.y - transform.eulerAngles.y;
+            Vector3 lookDirection = _targetDirection.normalized;
+            _freeRotation = Quaternion.LookRotation(lookDirection, transform.up);
+            var diferenceRotation = _freeRotation.eulerAngles.y - transform.eulerAngles.y;
             var eulerY = transform.eulerAngles.y;
 
-            if (diferenceRotation < 0 || diferenceRotation > 0) eulerY = freeRotation.eulerAngles.y;
+            if (diferenceRotation < 0 || diferenceRotation > 0) eulerY = _freeRotation.eulerAngles.y;
             var euler = new Vector3(0, eulerY, 0);
 
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(euler), turnSpeed * turnSpeedMultiplier * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(euler), turnSpeed * _turnSpeedMultiplier * Time.deltaTime);
         }
 	}
 
@@ -77,25 +77,25 @@ public class CharacterMovement : MonoBehaviour
     {
         if (!useCharacterForward)
         {
-            turnSpeedMultiplier = 1f;
-            var forward = mainCamera.transform.TransformDirection(Vector3.forward);
+            _turnSpeedMultiplier = 1f;
+            var forward = _mainCamera.transform.TransformDirection(Vector3.forward);
             forward.y = 0;
 
             //get the right-facing direction of the referenceTransform
-            var right = mainCamera.transform.TransformDirection(Vector3.right);
+            var right = _mainCamera.transform.TransformDirection(Vector3.right);
 
             // determine the direction the player will face based on input and the referenceTransform's right and forward directions
-            targetDirection = input.x * right + input.y * forward;
+            _targetDirection = _input.x * right + _input.y * forward;
         }
         else
         {
-            turnSpeedMultiplier = 0.2f;
+            _turnSpeedMultiplier = 0.2f;
             var forward = transform.TransformDirection(Vector3.forward);
             forward.y = 0;
 
             //get the right-facing direction of the referenceTransform
             var right = transform.TransformDirection(Vector3.right);
-            targetDirection = input.x * right + Mathf.Abs(input.y) * forward;
+            _targetDirection = _input.x * right + Mathf.Abs(_input.y) * forward;
         }
     }
 }

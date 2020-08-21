@@ -18,14 +18,10 @@ public class Weapon : MonoBehaviour
         protected int fireRatePerSecond = 0;
 
         #endregion
-
-        #region private variables
-
+        
         private float _timer;
-        private bool _isReloading = false;
-
-        #endregion
-
+        public  bool isReloading;
+        
     #endregion
 
     #region virtual buildin methods
@@ -47,12 +43,12 @@ public class Weapon : MonoBehaviour
                 if (bulletsInMagazine > 0)
                 {
                     bulletsInMagazine -= 1;
-                    _isReloading = false;
+                    isReloading = false;
                 }
                 else if(magazineInReserve > 0)
                 {
                     StartCoroutine(ReloadIn(1));
-                    _isReloading = true;
+                    isReloading = true;
                 }
                 _timer = 0;
             }
@@ -74,7 +70,7 @@ public class Weapon : MonoBehaviour
 
     private IEnumerator ReloadIn(int seconds)
     {
-        if(_isReloading) yield break;
+        if(isReloading) yield break;
         yield return new WaitForSeconds(seconds);
         bulletsInMagazine = bulletsInFullMagazine;
         if(magazineInReserve > 0)

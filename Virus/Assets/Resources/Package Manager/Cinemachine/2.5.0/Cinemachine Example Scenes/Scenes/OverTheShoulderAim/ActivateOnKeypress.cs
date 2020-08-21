@@ -2,37 +2,37 @@
 
 public class ActivateOnKeypress : MonoBehaviour
 {
-    public KeyCode ActivationKey = KeyCode.LeftControl;
-    public int PriorityBoostAmount = 10;
-    public GameObject Reticle;
+    public KeyCode activationKey = KeyCode.LeftControl;
+    public int priorityBoostAmount = 10;
+    public GameObject reticle;
 
-    Cinemachine.CinemachineVirtualCameraBase vcam;
-    bool boosted = false;
+    Cinemachine.CinemachineVirtualCameraBase _vcam;
+    bool _boosted = false;
 
     void Start()
     {
-        vcam = GetComponent<Cinemachine.CinemachineVirtualCameraBase>();
+        _vcam = GetComponent<Cinemachine.CinemachineVirtualCameraBase>();
     }
 
     void Update()
     {
-        if (vcam != null)
+        if (_vcam != null)
         {
-            if (Input.GetKey(ActivationKey))
+            if (Input.GetKey(activationKey))
             {
-                if (!boosted)
+                if (!_boosted)
                 {
-                    vcam.Priority += PriorityBoostAmount;
-                    boosted = true;
+                    _vcam.Priority += priorityBoostAmount;
+                    _boosted = true;
                 }
             }
-            else if (boosted)
+            else if (_boosted)
             {
-                vcam.Priority -= PriorityBoostAmount;
-                boosted = false;
+                _vcam.Priority -= priorityBoostAmount;
+                _boosted = false;
             }
         }
-        if (Reticle != null)
-            Reticle.SetActive(boosted);
+        if (reticle != null)
+            reticle.SetActive(_boosted);
     }
 }

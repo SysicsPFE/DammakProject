@@ -21,7 +21,6 @@ public class UiManager : MonoBehaviour
         #region private variables
 
         private Weapon _nowWeapon;
-        private int _allMagazines;
 
         #endregion
         
@@ -33,20 +32,17 @@ public class UiManager : MonoBehaviour
     {
         _crossHair = GameObject.Find("crossHair");
         _nowWeapon = WeaponsManager.nowWeapon;
-        _allMagazines = _nowWeapon.magazineInReserve;
-
+        
     }
 
     void Update()
     {
         ammo.text = _nowWeapon.bulletsInMagazine.ToString("D2") + "/" + _nowWeapon.bulletsInFullMagazine;
-        magazine.text = _nowWeapon.magazineInReserve.ToString("D2") + "/" + _allMagazines.ToString("D2");
-        if (_nowWeapon.magazineInReserve == 0)
-        {
-            ammo.textInfo.textComponent.color = Color.red;
-            magazine.textInfo.textComponent.color=Color.red;
-        }
-            
+        magazine.text = _nowWeapon.magazineInReserve.ToString("D2");
+        if (_nowWeapon.magazineInReserve != 0) return;
+        ammo.textInfo.textComponent.color = Color.red;
+        magazine.textInfo.textComponent.color=Color.red;
+
     }
 
     #endregion

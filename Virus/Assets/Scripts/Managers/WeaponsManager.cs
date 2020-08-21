@@ -12,7 +12,7 @@ public class WeaponsManager : MonoBehaviour
 
         #region public variables
 
-        private int _M4A1Magazines = 3;
+        public static int _m4A1Magazines = 3;
 
         #endregion
 
@@ -23,7 +23,23 @@ public class WeaponsManager : MonoBehaviour
     void Awake()
     {
         nowWeapon = FindObjectOfType<M4A1>();
-        nowWeapon.magazineInReserve = _M4A1Magazines;
+        nowWeapon.magazineInReserve = _m4A1Magazines;
+    }
+
+    public static void AddMoreAmmo(int bulletsInMagazine, int magazineInReserve)
+    {
+        nowWeapon.bulletsInMagazine += bulletsInMagazine;
+        if (nowWeapon.bulletsInMagazine > nowWeapon.bulletsInFullMagazine)
+        {
+            nowWeapon.magazineInReserve++;
+            nowWeapon.bulletsInMagazine = nowWeapon.bulletsInFullMagazine;
+        }
+        nowWeapon.magazineInReserve += magazineInReserve;
+    }
+    public static void FillNowWeapon(int bulletsInMagazine, int magazineInReserve)
+    {
+        nowWeapon.bulletsInMagazine = bulletsInMagazine;
+        nowWeapon.magazineInReserve = magazineInReserve;
     }
     
     #endregion

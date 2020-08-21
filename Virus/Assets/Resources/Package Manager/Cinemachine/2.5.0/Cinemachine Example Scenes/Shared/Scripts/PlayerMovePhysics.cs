@@ -11,11 +11,11 @@ public class PlayerMovePhysics : MonoBehaviour
     public Action spaceAction;
     public Action enterAction;
 
-    Rigidbody rb;
+    Rigidbody _rb;
 
 	void Start()
     {
-	    rb = GetComponent<Rigidbody> ();
+	    _rb = GetComponent<Rigidbody> ();
 	}
 
     private void OnEnable()
@@ -40,7 +40,7 @@ public class PlayerMovePhysics : MonoBehaviour
                 input = inputFrame * input;
                 if (input.magnitude > 0.001f)
                 {
-                    rb.AddForce(speed * input);
+                    _rb.AddForce(speed * input);
                     if (rotatePlayer)
                         transform.rotation = Quaternion.LookRotation(input.normalized, Vector3.up);
                 }

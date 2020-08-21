@@ -14,56 +14,56 @@ public class CharacterMovement2D : MonoBehaviour
     public float groundTolerance = 0.2f;
     public bool checkGroundForJump = true;
 
-    private float speed = 0f;
-    private bool isSprinting = false;
-    private Animator anim;
-    private Vector2 input;
-    private float velocity;
-    private bool headingleft = false;
-    private Quaternion targetrot;
-    private Rigidbody rigbody;
+    private float _speed = 0f;
+    private bool _isSprinting = false;
+    private Animator _anim;
+    private Vector2 _input;
+    private float _velocity;
+    private bool _headingleft = false;
+    private Quaternion _targetrot;
+    private Rigidbody _rigbody;
 
 	// Use this for initialization
 	void Start ()
 	{
-	    anim = GetComponent<Animator>();
-	    rigbody = GetComponent<Rigidbody>();
-	    targetrot = transform.rotation;        
+	    _anim = GetComponent<Animator>();
+	    _rigbody = GetComponent<Rigidbody>();
+	    _targetrot = transform.rotation;        
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-	    input.x = Input.GetAxis("Horizontal");
+	    _input.x = Input.GetAxis("Horizontal");
 
         // Check if direction changes
-	    if ((input.x < 0f && !headingleft) || (input.x > 0f && headingleft))
+	    if ((_input.x < 0f && !_headingleft) || (_input.x > 0f && _headingleft))
 	    {  
-            if (input.x < 0f) targetrot = Quaternion.Euler(0, 270, 0);
-	        if (input.x > 0f) targetrot = Quaternion.Euler(0, 90, 0);
-	        headingleft = !headingleft;
+            if (_input.x < 0f) _targetrot = Quaternion.Euler(0, 270, 0);
+	        if (_input.x > 0f) _targetrot = Quaternion.Euler(0, 90, 0);
+	        _headingleft = !_headingleft;
 	    }
         // Rotate player if direction changes
-        transform.rotation = Quaternion.Lerp(transform.rotation, targetrot, Time.deltaTime * 20f);
+        transform.rotation = Quaternion.Lerp(transform.rotation, _targetrot, Time.deltaTime * 20f);
 
 		// set speed to horizontal inputs
-	    speed = Mathf.Abs(input.x);
-        speed = Mathf.SmoothDamp(anim.GetFloat("Speed"), speed, ref velocity, 0.1f);
-        anim.SetFloat("Speed", speed);
+	    _speed = Mathf.Abs(_input.x);
+        _speed = Mathf.SmoothDamp(_anim.GetFloat("Speed"), _speed, ref _velocity, 0.1f);
+        _anim.SetFloat("Speed", _speed);
 
         // set sprinting
-	    if ((Input.GetKeyDown(sprintJoystick) || Input.GetKeyDown(sprintKeyboard))&& input != Vector2.zero) isSprinting = true;
-	    if ((Input.GetKeyUp(sprintJoystick) || Input.GetKeyUp(sprintKeyboard))|| input == Vector2.zero) isSprinting = false;
-        anim.SetBool("isSprinting", isSprinting);
+	    if ((Input.GetKeyDown(sprintJoystick) || Input.GetKeyDown(sprintKeyboard))&& _input != Vector2.zero) _isSprinting = true;
+	    if ((Input.GetKeyUp(sprintJoystick) || Input.GetKeyUp(sprintKeyboard))|| _input == Vector2.zero) _isSprinting = false;
+        _anim.SetBool("isSprinting", _isSprinting);
 
         // Jump
-	    if ((Input.GetKeyDown(jumpJoystick) || Input.GetKeyDown(jumpKeyboard)) && isGrounded())
+	    if ((Input.GetKeyDown(jumpJoystick) || Input.GetKeyDown(jumpKeyboard)) && IsGrounded())
 	    {
-	        rigbody.velocity = new Vector3(input.x, jumpVelocity, 0f);
+	        _rigbody.velocity = new Vector3(_input.x, jumpVelocity, 0f);
 	    }
 	}
 
-    public bool isGrounded()
+    public bool IsGrounded()
     {
         if (checkGroundForJump)
             return Physics.Raycast(transform.position, Vector3.down, groundTolerance);

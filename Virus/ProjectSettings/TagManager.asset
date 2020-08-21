@@ -10,6 +10,14 @@ TagManager:
   - VirtualAimCamera
   - MainCam
   - M4A1
+  - MachineGun
+  - SafeProgram
+  - blood
+  - task manager door
+  - System32 door
+  - AppData door
+  - BusterDrone
+  - Registry door
   layers:
   - Default
   - TransparentFX
@@ -20,7 +28,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - cannon
   - 
   - 
   - 

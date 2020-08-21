@@ -25,25 +25,25 @@ namespace CodeStage.PackageToFolder
 		private delegate object[] ExtractAndPrepareAssetListDelegate(string packagePath, out string packageIconPath, out bool allowReInstall);
 #endif
 
-		private static Type packageUtilityType;
+		private static Type _packageUtilityType;
 		private static Type PackageUtilityType
 		{
 			get
 			{
-				if (packageUtilityType == null)
+				if (_packageUtilityType == null)
 				{
-					packageUtilityType = typeof(MenuItem).Assembly.GetType("UnityEditor.PackageUtility");
+					_packageUtilityType = typeof(MenuItem).Assembly.GetType("UnityEditor.PackageUtility");
 				}
-				return packageUtilityType;
+				return _packageUtilityType;
 			}
 		}
 
-		private static ExtractAndPrepareAssetListDelegate extractAndPrepareAssetList;
+		private static ExtractAndPrepareAssetListDelegate _extractAndPrepareAssetList;
 		private static ExtractAndPrepareAssetListDelegate ExtractAndPrepareAssetList
 		{
 			get
 			{
-				if (extractAndPrepareAssetList == null)
+				if (_extractAndPrepareAssetList == null)
 				{
 					var method = PackageUtilityType.GetMethod("ExtractAndPrepareAssetList");
 					if (method == null)
@@ -51,56 +51,56 @@ namespace CodeStage.PackageToFolder
 						throw new Exception("Couldn't extract method with ExtractAndPrepareAssetListDelegate delegate!");
 					}
 
-					extractAndPrepareAssetList = (ExtractAndPrepareAssetListDelegate)Delegate.CreateDelegate(
+					_extractAndPrepareAssetList = (ExtractAndPrepareAssetListDelegate)Delegate.CreateDelegate(
 					   typeof(ExtractAndPrepareAssetListDelegate),
 					   null,
 					   method);
 				}
 
-				return extractAndPrepareAssetList;
+				return _extractAndPrepareAssetList;
 			}
 		}
 		
-		private static FieldInfo destinationAssetPathFieldInfo;
+		private static FieldInfo _destinationAssetPathFieldInfo;
 		private static FieldInfo DestinationAssetPathFieldInfo
 		{
 			get
 			{
-				if (destinationAssetPathFieldInfo == null)
+				if (_destinationAssetPathFieldInfo == null)
 				{
 					var importPackageItem = typeof(MenuItem).Assembly.GetType("UnityEditor.ImportPackageItem");
-					destinationAssetPathFieldInfo = importPackageItem.GetField("destinationAssetPath");
+					_destinationAssetPathFieldInfo = importPackageItem.GetField("destinationAssetPath");
 				}
-				return destinationAssetPathFieldInfo;
+				return _destinationAssetPathFieldInfo;
 			}
 		}
 
-		private static MethodInfo importPackageAssetsMethodInfo;
+		private static MethodInfo _importPackageAssetsMethodInfo;
 		private static MethodInfo ImportPackageAssetsMethodInfo
 		{
 			get
 			{
-				if (importPackageAssetsMethodInfo == null)
+				if (_importPackageAssetsMethodInfo == null)
 				{
-					importPackageAssetsMethodInfo = PackageUtilityType.GetMethod("ImportPackageAssets");
+					_importPackageAssetsMethodInfo = PackageUtilityType.GetMethod("ImportPackageAssets");
 				}
 
-				return importPackageAssetsMethodInfo;
+				return _importPackageAssetsMethodInfo;
 			}
 		}
 
-		private static MethodInfo showImportPackageMethodInfo;
+		private static MethodInfo _showImportPackageMethodInfo;
 		private static MethodInfo ShowImportPackageMethodInfo
 		{
 			get
 			{
-				if (showImportPackageMethodInfo == null)
+				if (_showImportPackageMethodInfo == null)
 				{
 					var packageImport = typeof(MenuItem).Assembly.GetType("UnityEditor.PackageImport");
-					showImportPackageMethodInfo = packageImport.GetMethod("ShowImportPackage");
+					_showImportPackageMethodInfo = packageImport.GetMethod("ShowImportPackage");
 				}
 
-				return showImportPackageMethodInfo;
+				return _showImportPackageMethodInfo;
 			}
 		}
 

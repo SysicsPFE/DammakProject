@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMoveOnSphere : MonoBehaviour
 {
-    public SphereCollider Sphere;
+    public SphereCollider sphere;
 
     public float speed = 5;
     public bool rotatePlayer = true;
@@ -31,12 +31,12 @@ public class PlayerMoveOnSphere : MonoBehaviour
         }
 
         // Stick to sphere surface
-        if (Sphere != null)
+        if (sphere != null)
         {
-            var up = transform.position - Sphere.transform.position;
+            var up = transform.position - sphere.transform.position;
             up = up.normalized;
             var fwd = transform.forward.ProjectOntoPlane(up);
-            transform.position = Sphere.transform.position + up * (Sphere.radius + transform.localScale.y / 2);
+            transform.position = sphere.transform.position + up * (sphere.radius + transform.localScale.y / 2);
             transform.rotation = Quaternion.LookRotation(fwd, up);
         }
     }

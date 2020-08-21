@@ -22,10 +22,7 @@ public class CameraSettings : MonoBehaviour
         _playerAimCinemachineCamera = GameObject.FindWithTag("VirtualAimCamera").GetComponent<CinemachineFreeLook>();
     }
 
-    void Update()
-    {
-        SetActiveCamera();
-    }
+    void Update() => SetActiveCamera();
 
     #endregion
 

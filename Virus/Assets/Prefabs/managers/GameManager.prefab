@@ -43,13 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5431982a166c2c045977a72dc81dd940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allWeaponTransforms:
-    sprintMode:
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0}
-    aimingMode:
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0}
-    shootingMode:
-      position: {x: -0.03, y: -0.39, z: 0.02}
-      rotation: {x: 47.441, y: -35.175, z: 61.176}
+  doorLockMaterial: {fileID: 2100000, guid: 9a693e30bd413a74e8fa32cc5010541b, type: 2}
+  doorOpenMaterial: {fileID: 2100000, guid: d37585fcf3e448046a2d2f6b328c5277, type: 2}
